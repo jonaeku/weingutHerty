@@ -12,18 +12,41 @@ import Layout from "../layouts/Layout.astro";
         <div
             class="flex flex-col lg:flex-row bg-white rounded-lg items-center shadow-lg justify-evenly"
         >
-            <div class="flex flex-col p-10 lg:py-0 min-h-80 justify-center">
-                <h1 class="text-xl lg:text-2xl">Weingut</h1>
-                <div class="h-2 lg:h-4"></div>
-                <p class="center-text text-justify md:text-lg">
-                    Unser familiengeführtes Weingut lebt seit Generationen von
-                    den Erzeugnissen der Rebe. Von der Pflege der Weinberge, der
-                    heranwachsenden Trauben bis zur Ernte und der Arbeit im
-                    Keller liegt alles in unserer Hand. Wir legen größten Wert
-                    auf Sorgfalt und Qualität. Dabei hilft uns das Wissen von
-                    Generationen. Dies zeigt sich in den ausgereiften Weinen die
-                    wir stets, jedes Jahr aufs Neue, für Sie erzeugen.
-                </p>
+            <div class="flex flex-col items-center">
+                <div class="flex flex-col p-10 pb-3 lg:py-0 min-h-80 justify-center">
+                    <h1 class="text-xl lg:text-2xl">Weingut</h1>
+                    <div class="h-2 lg:h-4"></div>
+                    <p class="center-text text-justify md:text-lg">
+                        Unser familiengeführtes Weingut lebt seit Generationen
+                        von den Erzeugnissen der Rebe. Von der Pflege der
+                        Weinberge, der heranwachsenden Trauben bis zur Ernte und
+                        der Arbeit im Keller liegt alles in unserer Hand. Wir
+                        legen größten Wert auf Sorgfalt und Qualität. Dabei
+                        hilft uns das Wissen von Generationen. Dies zeigt sich
+                        in den ausgereiften Weinen die wir stets, jedes Jahr
+                        aufs Neue, für Sie erzeugen.
+                    </p>
+                </div>
+                <div class="preisliste">
+                    <button onclick="myFunction()" class="dropbtn">
+                        Wein - Preisliste
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="preislisten/HAUSPREISLISTE April 2022.pdf"
+                            >Hausabholung</a
+                        >
+                        <a href="preislisten/POST PREISLISTE April 2022.pdf"
+                            >Postversand</a
+                        >
+                        <a href="preislisten/HH - Spedition April 2022 -.pdf"
+                            >Hamburg</a
+                        >
+                        <a href="preislisten/Augsburg - Arnsberg April 2022.pdf"
+                            >Augsburg</a
+                        >
+                    </div>
+                </div>
+                <div class="h-3 lg:h-0"></div>
             </div>
             <img
                 class="rounded-b-lg lg:rounded-l-none lg:rounded-r-lg w-full object-cover h-80"
@@ -83,3 +106,86 @@ import Layout from "../layouts/Layout.astro";
         <div class="h-10"></div>
     </main>
 </Layout>
+
+<script is:inline>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")) {
+                    openDropdown.classList.remove("show");
+                }
+            }
+        }
+    };
+</script>
+
+<style>
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: rgb(63, 63, 63);
+        color: white;
+        padding: 8px 15px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0px 8px 15px rgb(186, 186, 186);
+        width: 150px;
+    }
+
+    .dropbtn:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover,
+    .dropbtn:focus {
+        background-color: rgb(63, 63, 63);
+        z-index: 2;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .preisliste {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        width: 150px;
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 137px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: center;
+        margin-top: -4px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 12px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display: block;
+    }
+</style>
