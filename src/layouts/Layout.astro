@@ -1,0 +1,111 @@
+---
+import "../global.css";
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="flex flex-col items-center justify-center">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="font max-w-[1500px]">
+		<div
+			class="w-screen absolute left-0 flex flex-row bg-gray h-20 items-center px-5 xl:px-20 font drop-shadow-2xl"
+		>
+			<a href="index.html"
+				><img
+					class="absolute top-0 h-20 lg:h-32 rounded"
+					src="img/HertyLogo_grey.png"
+					alt=""
+				/>
+			</a>
+			<div class="hidden xl:flex text-white text-2xl gap-6 mx-auto">
+				<a href="/">Home</a>
+				<a href="weingut">Weingut</a>
+				<a href="gaestehaus">Gästehaus</a>
+				<a href="galerie">Galerie</a>
+				<a href="kontakt">Kontakt</a>
+			</div>
+		</div>
+		<div
+			class="nav-button xl:hidden"
+			id="nav-button"
+			onclick="toggleMenu()"
+		>
+		</div>
+		<div class="nav-menu" id="nav-menu">
+			<ul>
+				<li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+				<li>
+					<a href="weingut.html" onclick="toggleMenu();">Weingut</a>
+				</li>
+				<li>
+					<a href="pension.html" onclick="toggleMenu();">Gästehaus</a>
+				</li>
+				<li>
+					<a href="galerie.html" onclick="toggleMenu();">Galerie</a>
+				</li>
+				<li>
+					<a href="kontakt.html" onclick="toggleMenu();">Kontakt</a>
+				</li>
+				<br /><br />
+				<li>
+					<a href="https://www.instagram.com/weingutherty/?hl=de"
+						><img
+							class="w-10 mx-auto"
+							src="img/instagram.png"
+							alt=""
+						/>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="px-5 xl:px-20 mt-20">
+			<slot />
+		</div>
+	</body>
+	<footer>
+		<div
+			class="h-20 bg-gray px-5 lg:px-20 text-white flex flex-col items-center justify-center drop-shadow-2xl"
+		>
+			<a href="/impressum">Impressum & Datenschutz</a>
+		</div>
+	</footer>
+</html>
+<script is:inline>
+	function toggleMenu() {
+		const toggle = document.querySelector(".nav-button");
+		toggle.classList.toggle("active");
+		const navMenu = document.querySelector(".nav-menu");
+		navMenu.classList.toggle("active");
+	}
+</script>
+
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			#da62c4 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #f6f6f6;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>

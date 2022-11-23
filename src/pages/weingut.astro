@@ -1,0 +1,85 @@
+---
+import Spacer from "../components/Spacer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Weingut">
+    <main>
+        <div class="h-6 lg:h-10"></div>
+        <h1 class="text-2xl lg:text-4xl bold text-center">Weingut</h1>
+        <hr />
+        <div class="h-6 lg:h-10"></div>
+        <div
+            class="flex flex-col lg:flex-row bg-white rounded-lg items-center shadow-lg justify-evenly"
+        >
+            <div class="flex flex-col p-10 lg:py-0 min-h-80 justify-center">
+                <h1 class="text-xl lg:text-2xl">Weingut</h1>
+                <div class="h-2 lg:h-4"></div>
+                <p class="center-text text-justify md:text-lg">
+                    Unser familiengeführtes Weingut lebt seit Generationen von
+                    den Erzeugnissen der Rebe. Von der Pflege der Weinberge, der
+                    heranwachsenden Trauben bis zur Ernte und der Arbeit im
+                    Keller liegt alles in unserer Hand. Wir legen größten Wert
+                    auf Sorgfalt und Qualität. Dabei hilft uns das Wissen von
+                    Generationen. Dies zeigt sich in den ausgereiften Weinen die
+                    wir stets, jedes Jahr aufs Neue, für Sie erzeugen.
+                </p>
+            </div>
+            <img
+                class="rounded-b-lg lg:rounded-l-none lg:rounded-r-lg w-full object-cover h-80"
+                src="img/weingut.jpeg"
+                alt="Weingut"
+            />
+        </div>
+
+        <Spacer />
+
+        <div
+            class="flex flex-col lg:flex-row-reverse bg-white rounded-lg items-center shadow-lg justify-evenly"
+        >
+            <div class="flex flex-col p-10 lg:py-0 min-h-80 justify-center">
+                <h1 class="text-xl lg:text-2xl">Unsere Probierstube</h1>
+                <div class="h-2 lg:h-4"></div>
+                <p class="center-text text-justify md:text-lg">
+                    In unserer Weinprobierstube können Sie von all den leckeren
+                    Weinen probieren. Unsere Sortiment der weißen Rebsorten
+                    beeinhaltet Riesling, Bacchus, Kerner, Grauburgunder,
+                    Weißburgunder, Chardonnay, Sauvignon Blanc, Morio-Muskat,
+                    Ruländer, Gewürztraminer, Rieslaner, Müller-Thurgau und
+                    Winzergeselle. Für die Rotweinliebhaber bieten wir
+                    Dornfelder, Heroldrebe, Lemberger, Cabernet Sauvignon,
+                    Spätburgunder, Cabernet Dorsa, Acolon und Frühburgunder an.
+                </p>
+            </div>
+            <img
+                class="rounded-b-lg lg:rounded-b-none lg:rounded-l-lg w-full object-cover h-80"
+                src="img/weinprobier.png"
+                alt="Weingut"
+            />
+        </div>
+
+        <Spacer />
+
+        <div
+            class="flex flex-col lg:flex-row bg-white rounded-lg items-center shadow-lg justify-evenly"
+        >
+            <div class="flex flex-col p-10 lg:py-0 min-h-80 justify-center">
+                <h1 class="text-xl lg:text-2xl">Der Keller</h1>
+                <div class="h-2 lg:h-4"></div>
+                <p class="center-text text-justify md:text-lg">
+                    All die Arbeit draußen in den Weinbergen mündet letztendlich
+                    im Weinkeller. Hier zeigt sich die Erfahrung und das Wissen
+                    des Winzermeisters. Die Traube kann noch so gute Bedingungen
+                    über das Jahr haben, wenn die Kellerarbeit mißlingt ist alle
+                    Mühe umsonst gewesen.
+                </p>
+            </div>
+            <img
+                class="rounded-b-lg lg:rounded-l-none lg:rounded-r-lg w-full object-cover h-80"
+                src="img/weinkeller.png"
+                alt="Weingut"
+            />
+        </div>
+        <div class="h-10"></div>
+    </main>
+</Layout>

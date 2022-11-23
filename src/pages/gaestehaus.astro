@@ -1,0 +1,148 @@
+---
+import Spacer from "../components/Spacer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Gästehaus">
+    <main>
+        <div class="h-6 lg:h-10"></div>
+        <h1 class="text-2xl lg:text-4xl bold text-center">Gästehaus</h1>
+        <hr />
+        <div class="h-6 lg:h-10"></div>
+        <div
+            class="flex flex-col xl:flex-row bg-white rounded-lg items-center shadow-lg justify-evenly"
+        >
+            <div class="flex flex-col p-10 xl:py-0 min-h-80 justify-center">
+                <h1 class="text-xl lg:text-2xl">Gästehaus</h1>
+                <div class="h-2 lg:h-4"></div>
+                <p class="center-text text-justify md:text-lg">
+                    Seit Herbst 2006 können wir Ihnen unsere Gästezimmer
+                    anbieten. Das Gästehaus liegt inmitten der Weinberge,
+                    unterhalb des Haardtrandes. Alle Zimmer sind sehr gemütlich
+                    eingerichtet. Die Küche und das Esszimmer stehen unseren
+                    Gästen immer zur Verfügung. In der angenehm hellen
+                    Atmosphäre des Esszimmers wird das Frühstück eingenommen.
+                    Gerne können Sie hier einen gemütlichen Fernsehabend in der
+                    Gemeinschaft einlegen oder nach einer Wanderung ausruhen und
+                    bei einem schönen Glas Wein eine Vesper genießen.
+                </p>
+            </div>
+            <img
+                class="rounded-b-lg lg:rounded-l-none lg:rounded-r-lg w-full object-cover h-80"
+                src="img/gaestehaus.png"
+                alt="Weingut"
+            />
+        </div>
+
+        <div class="h-10 lg:h-10"></div>
+
+        <h1 class="text-center text-xl lg:text-2xl">
+            Informationen für unsere Gäste
+        </h1>
+        <hr />
+
+        <div class="flex justify-center items-center text-center">
+            <ul>
+                <li>Kaffeevollautomat</li>
+                <li>Kühlschrank</li>
+                <li>Kochmöglichkeit</li>
+                <li>Spülmaschine</li>
+                <li>Kinderbett für Kleinkinder</li>
+                <li>Bettwäsche</li>
+                <li>Handtücher</li>
+                <li>TV im Gemeinschaftsraum</li>
+                <li>TV in allen Zimmern</li>
+                <li>WLAN</li>
+                <li>Grillmöglichkeiten</li>
+                <li>Gartenterasse</li>
+                <li>Parkmöglichkeiten</li>
+            </ul>
+        </div>
+
+        <div class="h-10 lg:h-10"></div>
+        <h1 class="text-center text-xl lg:text-2xl">Preise</h1>
+        <hr />
+
+        <table class="greyGridTable">
+            <thead>
+                <tr>
+                    <th class="table-head">Übernachtungen</th>
+                    <th>Riesling & Traminerzimmer</th>
+                    <th>Bacchus & Burgunderzimmer</th>
+                </tr>
+                <tr>
+                    <th style="font-weight: 300;">im Doppelzimmer</th>
+                    <th style="font-weight: 300;">mit je eigenem Bad</th>
+                    <th style="font-weight: 300;">mit gemeinsamem Bad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 Nacht</td>
+                    <td>95,00 €</td>
+                    <td>85,00 €</td>
+                </tr>
+                <tr>
+                    <td>2-3 Nächte</td>
+                    <td>80,00 €</td>
+                    <td>70,00 €</td>
+                </tr>
+                <tr>
+                    <td>4-6 Nächte</td>
+                    <td>75,00 €</td>
+                    <td>65,00 €</td>
+                </tr>
+                <tr>
+                    <td>ab 7 Nächte</td>
+                    <td>70,00 €</td>
+                    <td>60,00 €</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="h-4 lg:h-6"></div>
+        <div>
+            <p class="text-center lg:text-lg">
+                Die Preise beziehen sich je Doppelzimmer für 2 Personen,
+                inklusive Frühstück, Endreinigung und MwSt.
+            </p>
+            <div class="h-2 lg:h-4"></div>
+            <p class="text-center lg:text-lg">Hund pro Nacht 10€</p>
+        </div>
+        <div class="h-10 lg:h-10"></div>
+
+        <div
+            class="flex flex-col xl:flex-row bg-white rounded-lg items-center shadow-lg justify-evenly"
+        >
+            <div class="flex flex-col p-10 xl:py-0 min-h-80 justify-center">
+                <h1 class="text-xl lg:text-2xl">Wohnmobilstellplätze</h1>
+                <div class="h-2 lg:h-4"></div>
+                <p class="center-text text-justify md:text-lg">
+                    Ganz neu für Sie haben wir jetzt Sanitäre Anlagen für
+                    Wohnmobil und Wohnwagen gebaut. Sie können bei uns auf
+                    unserer Wiese zwischen den Weinbergen übernachten. Bei uns
+                    bekommen Sie Strom, ein Bad mit WC und Dusche, einen
+                    erholsamen Urlaub und eine vielfältige Weinprobe.
+                </p>
+            </div>
+            <img
+                class="w-full object-cover h-80"
+                src="img/WoMo.png"
+                alt="Weingut"
+            />
+            <img
+                class="rounded-b-lg lg:rounded-l-none lg:rounded-r-lg w-full object-cover h-80"
+                src="img/Bad.png"
+                alt="Weingut"
+            />
+        </div>
+        <div class="h-4 lg:h-6"></div>
+        <div>
+            <p class="text-center lg:text-lg">
+                Stellplatz inklusive Badezimmer und Strom
+            </p>
+            <div class="h-2 lg:h-4"></div>
+            <p class="text-center lg:text-lg">20€ pro Womo/Nacht</p>
+        </div>
+        <div class="h-10"></div>
+    </main>
+</Layout>
