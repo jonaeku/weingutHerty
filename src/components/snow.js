@@ -7,7 +7,7 @@ var snowflakes = {
     ///////////////////////////// configuration ////////////////////////////
 
     // amout of flakes
-    _amount: 150,
+    _amount: 80,
     // random colors
     _color: ['#AAAACC', '#DDDDFF', '#ffffff', '#f8f9fa'],
     // random fonts
