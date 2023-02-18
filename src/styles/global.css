@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Zen Maru Gothic";
-    src: url("/fonts/ZenMaruGothic-Regular.ttf") format("truetype");
+    src: url("/public/fonts/Urbanist-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Zen Maru Gothic Bold";
-    src: url("/fonts/ZenMaruGothic-Medium.ttf") format("truetype");
+    src: url("/public/fonts/Urbanist-Medium.ttf") format("truetype");
 }
 
 hr {
