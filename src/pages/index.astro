@@ -6,60 +6,71 @@ import "../styles/global.css";
 ---
 
 <Layout title="Weingut Herty">
-	<main>
-		<div class="h-6 lg:h-10"></div>
-		<div class="text-center">
-			<p class="text-2xl lg:text-4xl bold">
-				Herzlich Willkommen im <br /> Weingut & Gästehaus Herty!
-			</p>
-			<hr />
-			<p class="text-lg lg:text-2xl">
-				Hier bekommen Sie einen Überblick über unser Weingut, unser
-				schönes Gästehaus und unsere Familie.
-			</p>
-		</div>
+  <main>
+    <div class="h-6 lg:h-10"></div>
+    <div class="text-center">
+      <p class="text-2xl lg:text-4xl bold">
+        Herzlich Willkommen im <br /> Weingut & Gästehaus Herty!
+      </p>
+      <hr />
+      <p class="text-lg lg:text-2xl">
+        Hier bekommen Sie einen Überblick über unser Weingut, unser schönes
+        Gästehaus und unsere Familie.
+      </p>
+    </div>
 
-		<div class="h-4 lg:h-10"></div>
-		<div class="flex flex-col md:flex-row md:gap-4 justify-between">
-			<Card img="img/Weinglas.png" text="Weingut" link="/weingut" />
-			<Card
-				img="img/gaestehaus.png"
-				text="Gästehaus"
-				link="/gaestehaus"
-			/>
-			<Card img="img/fam.png" text="Familie" link="/galerie" />
-		</div>
-		<Spacer />
+    <div class="h-4 lg:h-10"></div>
+    <div class="flex flex-col md:flex-row md:gap-4 justify-between">
+      <Card img="img/Weinglas.png" text="Weingut" link="/weingut" />
+      <Card img="img/gaestehaus.png" text="Gästehaus" link="/gaestehaus" />
+      <Card img="img/fam.png" text="Familie" link="/galerie" />
+    </div>
+    <Spacer />
 
-		<!-- Schneewalzer -->
+    <!-- Schneewalzer -->
 
-		<div
-			class="flex flex-col-reverse sm:flex-row bg-white rounded-lg items-center sm:gap-4 md:gap-6 lg:gap-16 shadow-lg justify-evenly"
-		>
-			<img
-				class="rounded-b-lg sm:rounded-l-lg md:rounded-r-none w-full sm:w-[50%] h-80 object-cover"
-				src="/img/vineyard.jpg"
-				alt="Schneewalzer"
-			/>
-			<div class="flex flex-col p-5 md:pr-16 w-full h-80 text-justify justify-center">
-				<h1 class="text-xl lg:text-2xl">Frühlingszeit</h1>
-				<div class="h-2 lg:h-4"></div>
-				<p class="text-[0.9rem] md:text-base">
-					Im Frühling beginnt die Wachstumsphase der Trauben. Mit der warmen Frühlingssonne beginnt ein aufregender Zeitraum für uns Winzer. Wir kümmern uns sorgfältig um unsere Weinberge und freuen uns auf eine erfolgreiche Ernte. Begleiten Sie uns auf unserem Weg!
-				</p>
-			</div>
-		</div>
-		<Spacer />
-		<div class="text-center text-lg lg:text-xl">
-			<p>
-				Wir wünschen Ihnen alles Gute und hoffen, Sie lassen sich unsere
-				Weine schmecken! 🥂❤️
-			</p>
-			<div class="h-5 lg:h-10"></div>
-			<a href="https://www.google.com/maps/dir//Weingut+%26+Gästehaus+Herty,+Marktstraße+39,+67487+Maikammer/@49.3044165,8.0656141,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47964f41b72e23c9:0xeb893b1ccf4794d8!2m2!1d8.1356537!2d49.3044377">
-				<img class="h-[300px] md:h-[400px] md:max-h-[500px] lg:h-auto w-full object-cover rounded-lg drop-shadow-2xl" src="/Karte.png" alt="Karte">
-			</a>
-		</div>
-		<div class="h-4 lg:h-20"></div>
-	</main>
+    <div
+      class="flex flex-col-reverse sm:flex-row bg-white rounded-lg items-center sm:gap-4 md:gap-6 lg:gap-16 shadow-lg justify-evenly"
+    >
+      <video
+        class="rounded-b-lg sm:rounded-l-lg md:rounded-r-none w-full sm:w-[50%] h-80 object-cover"
+        controls
+        muted
+      >
+        <source src="/img/marathon.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div
+        class="flex flex-col p-5 md:pr-16 w-full h-80 text-justify justify-center"
+      >
+        <h1 class="text-xl lg:text-2xl">Gemeinsam ins Ziel!</h1>
+        <div class="h-2 lg:h-4"></div>
+        <p class="text-[0.9rem] md:text-base">
+          Am Sonntagmorgen haben Annika und Daniel gemeinsam die
+          Herausforderung von 42 Kilometern angenommen. Beim Deutschen
+          Weinstraße Marathon liefen sie durch die idyllischen Weinorte und über
+          die Hügel der Weinberge. Das war ein Event für die ganze Familie!
+		  Wir sind stolz auf euch 🏃🏽‍♂️🏃🏽‍♀️
+        </p>
+      </div>
+    </div>
+    <Spacer />
+    <div class="text-center text-lg lg:text-xl">
+      <p>
+        Wir wünschen Ihnen alles Gute und hoffen, Sie lassen sich unsere Weine
+        schmecken! 🥂❤️
+      </p>
+      <div class="h-5 lg:h-10"></div>
+      <a
+        href="https://www.google.com/maps/dir//Weingut+%26+Gästehaus+Herty,+Marktstraße+39,+67487+Maikammer/@49.3044165,8.0656141,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47964f41b72e23c9:0xeb893b1ccf4794d8!2m2!1d8.1356537!2d49.3044377"
+      >
+        <img
+          class="h-[300px] md:h-[400px] md:max-h-[500px] lg:h-auto w-full object-cover rounded-lg drop-shadow-2xl"
+          src="/Karte.png"
+          alt="Karte"
+        />
+      </a>
+    </div>
+    <div class="h-4 lg:h-20"></div>
+  </main>
 </Layout>
